@@ -10,6 +10,7 @@
 */
 
 // Time to milliseconds conversion
+import later from "../base.js";
 later.SEC = 1000;
 later.MIN = later.SEC * 60;
 later.HOUR = later.MIN * 60;

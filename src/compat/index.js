@@ -1,2 +1,2 @@
-import "indexof";
-import "trim";
+import "./indexof.js";
+import "./trim.js";

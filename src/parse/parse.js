@@ -1,1 +1,2 @@
-later.parse = {};
+export var laterParse = {};
+export default laterParse;

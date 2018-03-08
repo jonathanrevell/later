@@ -9,11 +9,13 @@
 * For all details and documentation:
 *     http://github.com/bunkat/later
 */
+import later from "../base.js";
+import laterDate from "./date.js";
 
-later.date.timezone = function(useLocalTime) {
+laterDate.timezone = function(useLocalTime) {
 
   // configure the date builder used to create new dates in the right timezone
-  later.date.build = useLocalTime ?
+  laterDate.build = useLocalTime ?
     function(Y, M, D, h, m, s) { return new Date(Y, M, D, h, m, s); } :
     function(Y, M, D, h, m, s) { return new Date(Date.UTC(Y, M, D, h, m, s)); };
 
@@ -21,21 +23,21 @@ later.date.timezone = function(useLocalTime) {
   var get = useLocalTime ? 'get' : 'getUTC',
       d = Date.prototype;
 
-  later.date.getYear = d[get + 'FullYear'];
-  later.date.getMonth = d[get + 'Month'];
-  later.date.getDate = d[get + 'Date'];
-  later.date.getDay = d[get + 'Day'];
-  later.date.getHour = d[get + 'Hours'];
-  later.date.getMin = d[get + 'Minutes'];
-  later.date.getSec = d[get + 'Seconds'];
+  laterDate.getYear = d[get + 'FullYear'];
+  laterDate.getMonth = d[get + 'Month'];
+  laterDate.getDate = d[get + 'Date'];
+  laterDate.getDay = d[get + 'Day'];
+  laterDate.getHour = d[get + 'Hours'];
+  laterDate.getMin = d[get + 'Minutes'];
+  laterDate.getSec = d[get + 'Seconds'];
 
   // set the isUTC flag
-  later.date.isUTC = !useLocalTime;
+  laterDate.isUTC = !useLocalTime;
 };
 
 // friendly names for available timezones
-later.date.UTC = function() { later.date.timezone(false); };
-later.date.localTime = function() { later.date.timezone(true); };
+laterDate.UTC = function() { laterDate.timezone(false); };
+laterDate.localTime = function() { laterDate.timezone(true); };
 
 // use UTC by default
-later.date.UTC();
+laterDate.UTC();

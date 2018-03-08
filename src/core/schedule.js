@@ -9,6 +9,7 @@
 * For all details and documentation:
 *     http://github.com/bunkat/later
 */
+import later from "../base.js";
 later.schedule = function(sched) {
   if(!sched) throw new Error('Missing schedule definition.');
   if(!sched.schedules) throw new Error('Definition must include at least one schedule.');

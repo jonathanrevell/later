@@ -9,8 +9,8 @@
 * For all details and documentation:
 *     http://github.com/bunkat/later
 */
-
-later.array.sort = function (arr, zeroIsLast) {
+import laterArray from "./array.js";
+laterArray.sort = function (arr, zeroIsLast) {
   arr.sort(function(a,b) {
     return +a - +b;
   });

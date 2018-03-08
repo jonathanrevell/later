@@ -9,8 +9,8 @@
 * For all details and documentation:
 *     http://github.com/bunkat/later
 */
-
-later.array.prevInvalid = function (val, values, extent) {
+import laterArray from "./array.js";
+laterArray.prevInvalid = function (val, values, extent) {
 
   var min = extent[0], max = extent[1], len = values.length,
       zeroVal = values[len-1] === 0 && min !== 0 ? max : 0,

@@ -1,4 +1,5 @@
-later.date = {};
+export var laterDate = {};
+export default laterDate;
 
 
 

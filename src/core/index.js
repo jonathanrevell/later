@@ -1,4 +1,4 @@
-import "compile";
-import "schedule";
-import "settimeout";
-import "setinterval";
+import "./compile.js";
+import "./schedule.js";
+import "./settimeout.js";
+import "./setinterval.js";

@@ -16,7 +16,8 @@
 * @param {Constraint} constraint: The constraint to be modified
 * @param {Integer} value: The starting value of the before constraint
 */
-later.modifier.before = later.modifier.b = function(constraint, values) {
+import laterModifier from "./modifier.js";
+laterModifier.before = laterModifier.b = function(constraint, values) {
 
   var value = values[values.length-1];
 

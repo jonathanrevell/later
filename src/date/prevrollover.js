@@ -10,8 +10,10 @@
 * For all details and documentation:
 *     http://github.com/bunkat/later
 */
+import later from "../base.js";
+import laterDate from "./date.js";
 
-later.date.prevRollover = function(d, val, constraint, period) {
+laterDate.prevRollover = function(d, val, constraint, period) {
   var cur = constraint.val(d);
 
   return (val >= cur || !val) ?

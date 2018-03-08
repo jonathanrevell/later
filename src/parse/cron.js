@@ -19,7 +19,8 @@
 * @param {Bool} hasSeconds: True if the expression uses a seconds field
 * @api public
 */
-later.parse.cron = function (expr, hasSeconds) {
+import laterParse from "./parse.js";
+laterParse.cron = function (expr, hasSeconds) {
 
   // Constant array to convert valid names to values
   var NAMES = {

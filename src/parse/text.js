@@ -9,9 +9,10 @@
 * on the 15-20th day of march-dec
 * every 20 seconds every 5 minutes every 4 hours between the 10th and 20th hour
 */
-later.parse.text = function(str) {
+import laterParse from "./parse.js";
+laterParse.text = function(str) {
 
-  var recur = later.parse.recur,
+  var recur = laterParse.recur,
       pos = 0,
       input = '',
       error;

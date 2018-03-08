@@ -10,7 +10,10 @@
 * recur().every(5).minute().between(15, 45).and().at('09:00:00')
 *    .except().on(0, 1).month();
 */
-later.parse.recur = function () {
+import later from "../base.js";
+import laterParse from "./parse.js";
+
+laterParse.recur = function () {
 
   var schedules = [],
       exceptions = [],

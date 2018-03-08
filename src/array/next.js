@@ -9,8 +9,8 @@
 * For all details and documentation:
 *     http://github.com/bunkat/later
 */
-
-later.array.next = function (val, values, extent) {
+import laterArray from "./array.js";
+laterArray.next = function (val, values, extent) {
 
   var cur,
       zeroIsLargest = extent[0] !== 0,

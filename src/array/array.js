@@ -1,1 +1,2 @@
-later.array = {};
+export const laterArray = {};
+export default laterArray;

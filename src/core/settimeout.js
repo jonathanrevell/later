@@ -9,7 +9,7 @@
 * For all details and documentation:
 *     http://github.com/bunkat/later
 */
-
+import later from "../base.js";
 later.setTimeout = function(fn, sched) {
 
   var s = later.schedule(sched), t;

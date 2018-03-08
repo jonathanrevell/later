@@ -8,6 +8,7 @@
 * For all details and documentation:
 *     http://github.com/bunkat/later
 */
+import later from "../base.js";
 later.year = later.Y = {
 
   /**

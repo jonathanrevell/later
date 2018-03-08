@@ -21,9 +21,10 @@
 * @param {Int} m: Minute between 0 and 59, defaults to 0
 * @param {Int} s: Second between 0 and 59, defaults to 0
 */
-later.date.next = function(Y, M, D, h, m, s) {
+import laterDate from "./date.js";
+laterDate.next = function(Y, M, D, h, m, s) {
 
-  return later.date.build(
+  return laterDate.build(
     Y,
     M !== undefined ? M-1 : 0,
     D !== undefined ? D : 1,

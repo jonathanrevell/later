@@ -1,2 +1,2 @@
-
-later.modifier = {};
+export var laterModifier = {};
+export default laterModifier;
