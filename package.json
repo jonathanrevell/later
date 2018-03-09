@@ -19,13 +19,7 @@
     "type": "git",
     "url": "https://github.com/jonathanrevell/later.git"
   },
-  "main": "index.js",
-  "jam": {
-    "main": "later.js",
-    "shim": {
-      "exports": "later"
-    }
-  },
+  "main": "later.js",
   "devDependencies": {
     "benchmark": "*",
     "jslint": "*",
